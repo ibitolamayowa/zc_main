@@ -27,4 +27,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo ${GITHUB_REF##*/}
+      run: echo ${{ github.head_ref }}
